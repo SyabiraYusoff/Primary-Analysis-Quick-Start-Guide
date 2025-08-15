@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BDRhapsody&trade; Pipeline Quick Start Guide</title>
+        <base href="/PrimaryPipelineSetup/">
+        <link rel="stylesheet" href="assets/CSS/styles.css">    
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/XpressFavicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/XpressFavicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/XpressFavicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/XpressFavicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/XpressFavicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/XpressFavicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/XpressFavicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/XpressFavicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/XpressFavicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/XpressFavicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/XpressFavicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/XpressFavicon.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/XpressFavicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/assets/images/XpressFavicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+                <header class="banner-header">
+                    <div class="logo-section">
+                      <img src="assets/images/plusOmics.png" alt="BD Rhapsody Logo" class="logo-img">
+
+                      <div class="header-text" >
+                        <div class="subheading" id="subheading">YOUR QUICK START GUIDE</div>
+                        <h1>BD RHAPSODY&trade; PIPELINE</h1>
+                        </div>
+                    </div>
+                </header>
+
+
+            <div class="content-area">
+                <!-- Left Navigation Sidebar -->
+                <nav class="sidebar-left"> 
+                <h4>Chapters:</h4>
+                <div class="sidenav vl">
+                    <button class="nav-button" onclick="toggleSubStep('step1')">Pipeline Setup</button><br>
+                    <div class="sub-step" id="step1" style="display: none;">
+                        <button href="#Velsera_setup" onclick="loadSection('step1_Velsera_Platform')">Velsera Setup</button><br>
+                        <button href="#MacOS_setup" onclick="loadSection('step1_Docker_Based(MacOS)')">MacOS Installation</button><br>
+                        <button href="#LINUX_setup" onclick="loadSection('step1_Docker_Based(LINUX)')">LINUX Installation</button><br>
+                        <button href="#Pipeline_bundle" onclick="loadSection('step1_Pipeline_Bundle')">Pipeline Bundle Installation</button><br>
+                        <button href="#Pipeline_extra_utilities" onclick="loadSection('step1_Extra_Utilities')">Pipeline Extra Utilities</button><br>
+                    </div>
+
+                    <button class="nav-button" onclick="toggleSubStep('step2')">Files Upload</button><br>
+                    <div class="sub-step" id="step2" style="display: none;">
+                        <button href="#" onclick="loadSection('step2_Cloud_Based_Upload')">Velsera Interface</button><br>
+                        <button href="#" onclick="loadSection('step2_CLI_(MacOS)')">Command Line Interface (MacOS)</button><br>
+                        <button href="#" onclick="loadSection('step2_CLI_(Windows)')">Command Line Interface (Windows)</button><br>
+                    </div>
+
+                    <button class="nav-button" onclick="toggleSubStep('step3')">Reference Input Files</button><br>
+                    <div class="sub-step" id="step3" style="display: none;">
+                        <button href="#" onclick="loadSection('step3_Reference_Selector_Tool')">Reference Info Tool</button><br>
+                        <button href="#" onclick="loadSection('step3_Custom_Reference_Guide')">Custom Reference</button><br>
+                        <button href="#" onclick="loadSection('step3_AbSeq_Custom_Reference')">AbSeq Custom Reference</button><br>
+                    </div>
+
+                    <button class="nav-button" onclick="toggleSubStep('step4')">Pipeline Run Settings</button><br>
+                    <div class="sub-step" id="step4" style="display: none;">
+                        <button href="#" onclick="loadSection('step4_Run_on_Velsera')">Velsera Pipeline Run</button><br>
+                        <button href="#" onclick="loadSection('step4_Run_Locally')">Local Pipeline Run</button><br>
+                        <button href="#" onclick="loadSection('step4_Other_Pipeline_Settings')">Pipeline Settings</button><br>
+                    </div>
+  
+                    <button class="nav-button" onclick="toggleSubStep('step5')">Pipeline Output Files</button><br>
+                    <div class="sub-step" id="step5" style="display: none;">
+                        <button href="#" onclick="loadSection('step5_Metrics_Summary')">Metrics Summary</button><br>
+                        <button href="#" onclick="loadSection('step5_Bioproduct_Statistics')">Bioproduct Statistics</button><br>
+                        <button href="#" onclick="loadSection('step5_Dimensionality_Reduction')">Dimentionality Reduction</button><br>
+                        <button href="#" onclick="loadSection('step5_Immune_Cell_Classification')">Immune Cell Classification</button><br>
+                        <button href="#" onclick="loadSection('step5_Data_Tables')">Data Tables</button><br>
+
+                        <button href="#" onclick="loadSection('step5_BAM_BAI')">BAM Output Files</button><br>
+                        <button href="#" onclick="loadSection('step5_Pipeline_Report_HTML')">HTML Report</button><br>
+                        <button href="#" onclick="loadSection('step5_Seurat_Cellismo_H5MU')">Seurat/Cellismo/H5MU</button><br>
+                        <button href="#" onclick="loadSection('step5_Protein_Aggregates')">Protein Aggregates</button><br><br>
+                        <button href="#" onclick="loadSection('step5_ATAC_Metrics')">ATAC Metrics</button><br>
+
+                        <button href="#" onclick="loadSection('step5_ATAC_Fragments')">ATAC Fragments</button><br>
+                        <button href="#" onclick="loadSection('step5_ATAC_Transposase_Sites')">ATAC Transposase</button><br>
+                        <button href="#" onclick="loadSection('step5_ATAC_Peaks')">ATAC Peaks</button><br>
+                        <button href="#" onclick="loadSection('step5_ATAC_Peaks_Annotation')">ATAC Peaks Annotation</button><br>
+                        <button href="#" onclick="loadSection('step5_ATAC_DataTables')">ATAC Data Tables</button><br><br>
+
+                        <button href="#" onclick="loadSection('step5_SMK_Metrics')">SMK Metrics</button><br>
+                        <button href="#" onclick="loadSection('step5_SMK_Calls')">SMK Calls</button><br>
+                        <button href="#" onclick="loadSection('step5_SMK_ReadsPerCell')">SMK Reads</button><br>
+                        <button href="#" onclick="loadSection('step5_SMK_PerSample_Folder')">SMK Persample Folder</button><br><br>
+                        <button href="#" onclick="loadSection('step5_VDJ_Metrics')">VDJ Metrics</button><br>
+
+                        <button href="#" onclick="loadSection('step5_VDJ_PerCell')">VDJ Per Cell</button><br>
+                        <button href="#" onclick="loadSection('step5_VDJ_Contigs_AIRR')">AIRR</button><br>
+                    </div>
+
+                    <button class="nav-button" onclick="toggleSubStep('feedback')">Feedback Form</button><br>
+                </div>
+        </nav>
+
+            <!-- Middle Section: Main content -->
+             <main id="content">
+                <h2> Welcome to the Quick Start Guide</h2>
+                <p>This guide is designed to help you get started with the BD Rhapsody&trade; Pipeline.</p>
+                <img src="assets/images/pipeline_flow.gif" style="width:60%;">
+                   
+                <p>The BD Rhapsody&trade; Pipeline is a analysis workflow that processes raw sequencing data from the BD Rhapsody&trade; system to generate experimental overview as well as output files that generated to proceed with secondary analysis. It is designed to be user-friendly and accessible to all BD Rhapsody&trade; customers.</p>
+                <h3>What can the BD Rhapsody&trade; Pipeline do?</h3>
+                <p>The BD Rhapsody&trade; Pipeline can perform several key analyses, including:</p>
+                <ul>
+                    <li>Alignment of sequencing reads to a reference genome</li>
+                    <li>Quantification of gene expression levels</li>
+                    <li>Quality control of sequencing data</li>
+                    <li>Generation of visualizations and reports</li>
+                </ul>
+                <h3>Who is this Guide for?</h3>
+                <p><p>This guide is intended for researchers who are new to the BD Rhapsody&trade; and need help setting up and running their first analysis, or for experienced users who need a refresher guide. No bioinformatics experience is needed to run your data on our cloud platform Vesera. This guide includes instructions for local installation users and pipeline bundles.</p></p>
+                <h3>What do I need to get started?</h3>
+                <p>To use the BD Rhapsody&trade; Pipeline, you will need:</p>
+                <ul>
+                    <li>Raw Paired End sequencing data from the BD Rhapsody&trade; experiments</li>
+                    <li>A computer with internet access for Velsera User</li>
+                    <li>A web browser (Google Chrome or Mozilla Firefox recommended)</li>
+                    <li>A computer with Docker installed for Local Installation User</li>
+                    <li>A computer with Linux/Ubuntu environment for Pipeline Bundle User</li>
+                    
+                </ul>
+                <h3>What will I learn in this Guide?</h3>
+                <p>This guide will walk you through the process of setting up and running your first analysis on the BD Rhapsody&trade; Pipeline. You will learn how to:</p>
+                <ul>
+                    <li>Set up your pipeline</li>
+                    <li>Upload your sequencing data</li>
+                    <li>Select reference files</li>
+                    <li>Run the pipeline</li>
+                    <li>Review the output files</li>
+                    <li>Troubleshoot common issues</li>
+                </ul>
+                <h3>What are the benefits of using the BD Rhapsody&trade; Pipeline?</h3>
+                <p>The BD Rhapsody&trade; Pipeline offers several key benefits:</p>
+                <ul>
+                    <li>Automated analysis of sequencing data</li>
+                    <li>Standardized analysis workflows</li>
+                    <li>Interactive visualizations and reports</li>
+                    <li>Easy sharing of results with collaborators</li>
+                    <li>Access to advanced bioinformatics tools</li>
+                </ul>
+                <h3>Ready to get started?</h3>
+                <p>Click on the steps in the menu on the left to begin setting up and running your first analysis on the BD Rhapsody&trade; Pipeline. In each steps, please use the manu on the right to navigate between different sections.</p>
+                <h3>Need help?</h3>
+                <p>If you have any questions or encounter any issues while using the BD Rhapsody&trade; Pipeline, please contact our <a href="mailto:biox_support_EMEA@bd.com">support team</a>. We are here to help you get the most out of your BD Rhapsody&trade; experiments.</p>
+                
+                <h3>Feedback</h3>
+                <p>We welcome your feedback on this guide. If you have any suggestions for improvement or would like to report an error, please contact us at <a href="mailto:syabira.yusoff@bd.com">Feedback Email</a>.</p>
+                <h3>Disclaimer</h3>
+                <p>This guide is provided for informational purposes only. The information contained in this guide is subject to change without notice. BD Biosciences reserves the right to make changes to the BD Rhapsody&trade; Pipeline and its associated documentation at any time.</p><br>
+                <h3>Thank you for choosing the BD Rhapsody&trade; Pipeline!</h3>
+                
+             </main>
+
+            <!-- Right sidebar: Additional Information -->
+             <nav class="sidebar-right custom-cursor" >
+             </nav>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Developer: Syabira Yusoff | Bioinformatics Support Engineer | <a href="mailto:syabira.yusoff@bd.com">syabira.yusoff@bd.com</a></p>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+
+    </body>
+
+</html>

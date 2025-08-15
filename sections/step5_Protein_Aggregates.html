@@ -1,0 +1,39 @@
+<nav class="breadcrumb">
+    <button onclick="loadHome()"><i class="fa fa-fw fa-home"></i> Home</button>
+    <span>&rsaquo;</span>
+    <button onclick="loadStep('step5')"> Pipeline Output Files</button>
+    <span>&rsaquo;</span>
+    <button onclick="loadSection('step5_Protein_Aggregates')" style="color:darkgrey">Protein Aggregates</button>
+</nav>
+<div id="topPage"></div>
+
+<h2>Protein Aggregates Experimental:</h2>
+<br>
+<p class="code">File: [sample_name]_Protein_Aggregates_Experimental.csv</p>
+
+
+
+<p>Note:</p>
+<ul>
+    <li>Cell labels suspected of resulting from protein aggregates are set to TRUE.</li>
+    <li>This output file only exists when the pipeline parameter Putative_Cell_Call is set to AbSeq.</li>
+</ul>
+
+<table>
+    <tr>
+    <th>Column</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>Cell_Index</td>
+    <td>Unique cell identifier</td>
+</tr>
+<tr style="border-bottom: 2px solid #004593;">
+    <td>ProteinAggregate</td>
+    <td>TRUE/FALSE</td>
+</tr>
+</table>
+
+<div class="scroll-top">
+    <button><a href="#topPage">Scroll to top page</a></button>
+</div>

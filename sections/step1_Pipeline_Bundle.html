@@ -1,0 +1,39 @@
+<nav class="breadcrumb">
+    <button onclick="loadHome()"><i class="fa fa-fw fa-home"></i> Home</button>
+    <span>&rsaquo;</span>
+    <button onclick="loadStep('step1')"> Pipeline Setup</button>
+    <span>&rsaquo;</span>
+    <button onclick="loadSection('step1_Pipeline_Bundle')" style="color:darkgrey">Pipeline Bundle Installation</button>
+</nav>
+<div id="topPage"></div>
+<div class="fab-container">
+    <div class="button iconbutton" onclick="loadStep('feedback')">
+        <span>Share your feedback</span>
+    </div>
+</div>
+<h2>Pipeline Bundle (Docker free - LINUX only)</h2>
+
+<div class="notice"><p>Please note that this approach only tested working in Linux-based system listed below only:
+                    <ul>
+                    <li>Ubuntu 16.04 / 20.04 / 22.04</li>
+                    <li>Red Hat 7</li>
+                    <li>CentOS 7 / 9</li></ul>
+                </p></div>
+                
+<div class="card">
+    <ol>
+        <li>Create a directory in your computer to store the bundle. Navigate to selected directory to Download the latest version. You can either download it <a href="https://bd-rhapsody-public.s3.amazonaws.com/Rhapsody-Install-Bundle/rhapsodyPipeline-latest.tar.gz">here</a> or use the command line below and press Return. </li>
+                        <p class="code">wget https://bd-rhapsody-public.s3.amazonaws.com/Rhapsody-Install-Bundle/rhapsodyPipeline-latest.tar.gz</p>
+                        <li>In your command shell, extract the tar.gz bundle by entering the code below and press Return.</li>
+                        <p class="code">tar -xvzf rhapsodyPipeline-[version].tar.gz</p><br>
+                        <p class="code">cd rhapsodyPipeline-[version]</p>
+                        <li>Now the bundle is ready to run your analysis. please move forward to gather all the input files and folder for your BD Rhapsody&trade; Analysis Pipeline.</li>
+                        <li>Optional workflow: User can run a small test of the BD Rhapsody&trade; pipeline with built-in demo data:</li>
+                        <p class="code">./rhapsody pipeline --outdir test_results test_files/test_smallDemo.yml</p>
+                        </ol>
+                        </div>
+            </div>
+
+            <div class="scroll-top">
+                <button><a href="#topPage">Scroll to top page</a></button>
+            </div>
