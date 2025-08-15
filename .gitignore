@@ -1,0 +1,11 @@
+.DS_Store
+
+# yml file 
+*.yml
+
+#presentation files
+*.pptx
+*.ppt
+
+about.html
+contact.html
